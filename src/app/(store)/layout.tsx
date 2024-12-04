@@ -3,6 +3,7 @@ import "../globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import Header from "@/components/layout/Header";
 import { SanityLive } from "@/sanity/lib/live";
+import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
  title: "Eccommerce website",
@@ -23,6 +24,7 @@ export default function RootLayout({
       <SanityLive />
       {children}
      </main>
+     <Toaster />
     </body>
    </html>
   </ClerkProvider>
